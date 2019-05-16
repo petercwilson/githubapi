@@ -12,7 +12,7 @@ function displayResults(responseJson) {
   for (let i=0; i < responseJson.length; i++) {
   $('#results').append(
     `<p>Repo name: ${responseJson[i].name}</p>
-     <p>Repo url: ${responseJson[i].html_url}</p>
+     <p>Repo url: <a href="${responseJson[i].html_url}">${responseJson[i].html_url}</a></p>
      <br /> 
     `  
   )
