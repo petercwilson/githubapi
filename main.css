@@ -32,3 +32,14 @@ label {
 input {
     margin-left: 50px;
 }
+
+#results {
+    position: absolute;
+    top: 300px;
+    left: 421px;
+}
+
+#results p {
+    color: red;
+    font-size: 1.5em;
+}
