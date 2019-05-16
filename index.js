@@ -9,11 +9,14 @@ function getUserHandle(sel) {
 function displayResults(responseJson) {
   $('#results').empty();
   console.log(responseJson);
-  $('#results').html(
-    `<p>${responseJson.name}"</p>
-     <p>${responseJson.html_url}"</p> 
+  for (let i=0; i < responseJson.length; i++) {
+  $('#results').append(
+    `<p>Repo name: ${responseJson[i].name}</p>
+     <p>Repo url: ${responseJson[i].html_url}</p>
+     <br /> 
     `  
   )
+  }
   $('#results').removeClass('hidden');
 }
 
